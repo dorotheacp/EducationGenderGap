@@ -173,22 +173,22 @@ st.write('Namun, tentunya masih diperlukan upaya-upaya untuk memperjuangkan kese
 
 # Kesimpulan ==========================================================================================================================
 st.write('---')
-# col1_simp, col2_simp= st.columns([1,6])
-# with col1_simp:
-#     st.subheader('Kesimpulan')
-# with col2_simp:
-#     st.write('1. Ketidaksetaraan gender dalam pendidikan masih dirasakan di hampir seluruh bagian dunia, termasuk di Indonesia.')
-#     st.write('2. Pendidikan perempuan berkorelasi secara positif dengan angka partisipasi kerja dan berkorelasi negatif dengan tingkat kematian anak.')
-#     st.write('')
-col1_sou, col2_sou= st.columns([1,6])
-with col1_sou:
-    st.subheader('Data Source')
-with col2_sou:
-    st.write('bps.go.id')
+col1_simp, col2_simp= st.columns([1,6])
+with col1_simp:
+    st.subheader('Kesimpulan')
+with col2_simp:
+    st.write('1. Ketidaksetaraan gender dalam pendidikan masih dirasakan di hampir seluruh bagian dunia, termasuk di Indonesia.')
+    st.write('2. Pendidikan perempuan berkorelasi secara positif dengan angka partisipasi kerja dan berkorelasi negatif dengan tingkat kematian anak.')
+    st.write('')
+# col1_sou, col2_sou= st.columns([1,6])
+# with col1_sou:
+#     st.subheader('Data Source')
+# with col2_sou:
+#     st.write('bps.go.id')
 
-col1_cre, col2_cre = st.columns([6,2])
-with col1_cre:
-    ''
-with col2_cre:
-    st.markdown('DQ Lab Tetris II - Capstone Project')
-    st.markdown('Dorothea Claresta P (039)')
+# col1_cre, col2_cre = st.columns([6,2])
+# with col1_cre:
+#     ''
+# with col2_cre:
+#     st.markdown('DQ Lab Tetris II - Capstone Project')
+#     st.markdown('Dorothea Claresta P (039)')
