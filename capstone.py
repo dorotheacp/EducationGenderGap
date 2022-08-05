@@ -147,10 +147,12 @@ with col1_id:
                     x = 'Tahun',
                     y = ['Laki-laki','Perempuan'],
                     color_discrete_sequence=['blue','#DE3163'],
-                    width=600, height=400)
+                    width=575, height=400)
     fig5.update_layout(
         yaxis_title='Angka Melek Huruf (%)',
-        legend_title='Gender'
+        # legend_title='Gender'
+        showlegend=False,
+        yaxis_range=[95,100]
     )
     st.plotly_chart(fig5)
 with col2_id:
@@ -161,7 +163,9 @@ with col2_id:
                     width=600, height=400)
     fig6.update_layout(
         yaxis_title='Lama Sekolah (tahun)',
-        legend_title='Gender'
+        legend_title='Gender',
+        yaxis_range=[7,10]
+        # xaxis_range=[2014,2022]
     )
     st.plotly_chart(fig6)
 st.write('Berdasarkan data hingga tahun 2021, masih terdapat ketidaksetaraan gender dalam bidang pendidikaan di Indonesia jika dilihat dari angka melek huruf dan rata-rata lama/durasi sekolah perempuan dibandingkan dengan laki-laki. Kabar baiknya, kesenjangan pendidikan antara laki-laki dan perempuan secara umum semakin menipis tiap tahunnya.')
@@ -169,9 +173,22 @@ st.write('Namun, tentunya masih diperlukan upaya-upaya untuk memperjuangkan kese
 
 # Kesimpulan ==========================================================================================================================
 st.write('---')
-col1_simp, col2_simp= st.columns([1,6])
-with col1_simp:
-    st.subheader('Kesimpulan')
-with col2_simp:
-    st.write('1. Ketidaksetaraan gender dalam pendidikan masih dirasakan di hampir seluruh bagian dunia, termasuk di Indonesia.')
-    st.write('2. Pendidikan perempuan berkorelasi secara positif dengan angka partisipasi kerja dan berkorelasi negatif dengan tingkat kematian anak.')
+# col1_simp, col2_simp= st.columns([1,6])
+# with col1_simp:
+#     st.subheader('Kesimpulan')
+# with col2_simp:
+#     st.write('1. Ketidaksetaraan gender dalam pendidikan masih dirasakan di hampir seluruh bagian dunia, termasuk di Indonesia.')
+#     st.write('2. Pendidikan perempuan berkorelasi secara positif dengan angka partisipasi kerja dan berkorelasi negatif dengan tingkat kematian anak.')
+#     st.write('')
+col1_sou, col2_sou= st.columns([1,6])
+with col1_sou:
+    st.subheader('Data Source')
+with col2_sou:
+    st.write('bps.go.id')
+
+col1_cre, col2_cre = st.columns([6,2])
+with col1_cre:
+    ''
+with col2_cre:
+    st.markdown('DQ Lab Tetris II - Capstone Project')
+    st.markdown('Dorothea Claresta P (039)')
